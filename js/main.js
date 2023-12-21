@@ -20,10 +20,6 @@ const linkAction = function(){
 navLink.forEach(n=> n.addEventListener("click",linkAction));
 
 
-
-
-
-
 const slider = 
     document.querySelector(".hero");
 const arrLeft = 
