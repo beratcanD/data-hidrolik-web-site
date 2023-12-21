@@ -1,3 +1,6 @@
+
+/*--------------------------------------- HAMBURGER MENU SCRİPT-----------------------------------------*/
+
 hamburger = document.querySelector(".navbar-responsive");
 hamburger.onclick = function () {
     navBar = document.querySelector(".navbar-bottom");
@@ -20,7 +23,21 @@ const linkAction = function(){
 navLink.forEach(n=> n.addEventListener("click",linkAction));
 
 
-const slider = 
+window.addEventListener("resize",function(){
+    if(window.outerWidth >= 1024){
+        document.querySelector(".navbar-bottom").classList.remove("active");
+    }
+});
+
+
+/* --------------------------------------ANASAYFA SLİDER SCRİPT--------------------------------------*/
+
+
+
+
+const div = document.querySelector("div");
+if(div.classList.contains(".arrows")){
+    const slider = 
     document.querySelector(".hero");
 const arrLeft = 
     document.querySelector(".arrow-left");
@@ -57,4 +74,13 @@ arrRight.addEventListener("click",() => {
 
     slide(id);
 });
+
+};
+
+
+
+
+
+
+
 
