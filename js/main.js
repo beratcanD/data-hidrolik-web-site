@@ -7,7 +7,7 @@ hamburger.onclick = function () {
     navBar.classList.toggle("active");
 }
 
-openMenu = document.querySelector(".menu__about-us");
+/* openMenu = document.querySelector(".menu__about-us");
 openMenu.onclick = function() {
     menu = document.querySelector(".open__menu");
     productsMenu = document.querySelector(".open__menu-products");
@@ -21,7 +21,7 @@ openMenuProducts.onclick = function() {
     menu = document.querySelector("open__menu");
     productsMenu.classList.toggle("active");
     menu.classList.remove("active");
-}
+} */
 
 
 const navLink = document.querySelectorAll(".about-us__menu-list li");
