@@ -10,15 +10,29 @@ hamburger.onclick = function () {
 openMenu = document.querySelector(".menu__about-us");
 openMenu.onclick = function() {
     menu = document.querySelector(".open__menu");
+    productsMenu = document.querySelector(".open__menu-products");
     menu.classList.toggle("active");
+    productsMenu.classList.remove("active");
 }
 
-const navLink = document.querySelectorAll(".nav__link");
+openMenuProducts = document.querySelector(".menu__products");
+openMenuProducts.onclick = function() {
+    productsMenu = document.querySelector(".open__menu-products");
+    menu = document.querySelector("open__menu");
+    productsMenu.classList.toggle("active");
+    menu.classList.remove("active");
+}
+
+
+const navLink = document.querySelectorAll(".about-us__menu-list li");
+
 
 const linkAction = function(){
     let navMenu = document.querySelector(".navbar-bottom");
+    let navOpenMenu = document.querySelector(".open__menu");
     navMenu.classList.remove("active");
-}
+    navOpenMenu.classList.remove("active");
+} 
 
 navLink.forEach(n=> n.addEventListener("click",linkAction));
 
@@ -28,58 +42,6 @@ window.addEventListener("resize",function(){
         document.querySelector(".navbar-bottom").classList.remove("active");
     }
 });
-
-
-/* --------------------------------------ANASAYFA SLİDER SCRİPT--------------------------------------*/
-
-
-
-
-const div = document.querySelector("div");
-if(div.classList.contains(".arrows")){
-    const slider = 
-    document.querySelector(".hero");
-const arrLeft = 
-    document.querySelector(".arrow-left");
-const arrRight = 
-    document.querySelector(".arrow-right");
-
-const images = [
-    "bg1.png" , "bg2.png"
-];
-
-let id = 0;
-
-function slide(id){
-    slider.style.backgroundImage =  
-    `url(../assets/images/${images[id]})`; 
-}
-
-arrLeft.addEventListener("click",() => {
-    id--;
-
-    if(id < 0){
-        id = images.length - 1;
-    }
-
-    slide(id);
-});
-
-arrRight.addEventListener("click",() => {
-    id++;
-
-    if(id > images.length -1){
-        id = 0;
-    }
-
-    slide(id);
-});
-
-};
-
-
-
-
 
 
 
