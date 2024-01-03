@@ -23,6 +23,32 @@ openMenuProducts.onclick = function() {
     menu.classList.remove("active");
 } */
 
+document.querySelectorAll(".nav__link--dropdown a").forEach(function(el){
+    el.addEventListener("click", function (e) {
+        e.preventDefault();
+
+        var menuId = e.target.dataset.menuId;
+        var dropdownElement = document.querySelector("#" + menuId);
+
+        if(dropdownElement.classList.contains("active")){
+            dropdownElement.classList.remove("active")
+        }else{
+            document.querySelectorAll(".dropdown-menu").forEach(function(navLinkEl){
+                navLinkEl.classList.remove("active")
+            });
+
+            document.querySelector("#" + menuId).classList.add("active");
+        }
+    })
+})
+
+document.body.addEventListener("click", function(e){
+    if(!e.target.closest(".dropdown-menu") && !e.target.dataset.menuId){
+        document.querySelectorAll(".dropdown-menu").forEach(function(navLinkEl){
+            navLinkEl.classList.remove("active")
+        });
+    }
+});
 
 const navLink = document.querySelectorAll(".about-us__menu-list li");
 

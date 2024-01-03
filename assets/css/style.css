@@ -681,8 +681,8 @@ gap: 30px;
 }
 
 .open__menu.active .about-us__menu-list .menu__header a{
-    font-size: 14px;
-    font-weight: 600;
+    font-size: 16px;
+    font-weight: 700;
 }
 
 .open__menu.active .about-us__menu-img{
@@ -967,13 +967,13 @@ gap: 30px;
     }
 
     .open__menu.active .about-us__menu-list{
-        background-color: var(--background-primary);
+        background-color: rgb(243, 239, 233);;
         position: absolute;
         top: 0px;
         left: 0;
         right: 0;
-        padding: 20px;
-        height: 200px;
+        padding: 40px;
+        height: 230px;
     
     }
 
@@ -999,8 +999,8 @@ gap: 30px;
         top: 0px;
         left: 0;
         right: 0;
-        padding: 20px;
-        height: 220px;
+        padding: 40px;
+        height: 230px;
     
     }
 
@@ -1038,8 +1038,8 @@ gap: 30px;
         top: 0px;
         left: 0;
         right: 0;
-        padding: 20px;
-        height: 200px;
+        padding: 40px;
+        height: 230px;
     
     }
 
@@ -1048,8 +1048,9 @@ gap: 30px;
         font-weight: 400;
     }
 
-    .open__menu-products.active .about-us__menu-list .menu__header{
-        display: none;
+    .open__menu-products.active .about-us__menu-list .menu__header a{
+        font-size: 16px;
+        font-weight: 700;
     }
 
 
@@ -1066,14 +1067,20 @@ gap: 30px;
         display: none;
     }
 
+    .open__menu-products.active .about-us__menu-img p{
+        margin-top: 20px;
+    font-size: 12px;
+    font-weight: 400;
+    }
+
     .open__menu-products.active .about-us__menu-list{
         background-color: rgb(243, 239, 233);
         position: absolute;
         top: 0px;
         left: 0;
         right: 0;
-        padding: 20px;
-        height: 200px;
+        padding: 40px;
+        height: 230px;
     
     }
 
@@ -1326,13 +1333,13 @@ gap: 30px;
     }
 
     .open__menu.active .about-us__menu-list{
-        background-color: var(--background-primary);
+        background-color: rgb(243, 239, 233);;
         position: absolute;
         top: 0px;
         left: 0;
         right: 0;
-        padding: 20px;
-        height: 200px;
+        padding: 40px;
+        height: 230px;
     
     }
 
@@ -1367,8 +1374,8 @@ gap: 30px;
         top: 0px;
         left: 0;
         right: 0;
-        padding: 20px;
-        height: 200px;
+        padding: 40px;
+        height: 230px;
     
     }
 
@@ -1402,7 +1409,7 @@ gap: 30px;
         left: 0;
         right: 0;
         padding: 20px;
-        height: 200px;
+        height: 230px;
     
     }
 
@@ -1633,13 +1640,13 @@ gap: 30px;
     }
 
     .open__menu.active .about-us__menu-list{
-        background-color: var(--background-primary);
+        background-color: rgb(243, 239, 233);;
         position: absolute;
         top: 0px;
         left: 0;
         right: 0;
-        padding: 20px;
-        height: 200px;
+        padding: 40px;
+        height: 230px;
     
     }
 
@@ -1671,8 +1678,8 @@ gap: 30px;
         top: 0px;
         left: 0;
         right: 0;
-        padding: 20px;
-        height: 200px;
+        padding: 40px;
+        height: 230px;
     
     }
 
@@ -1705,8 +1712,8 @@ gap: 30px;
         top: 0px;
         left: 0;
         right: 0;
-        padding: 20px;
-        height: 200px;
+        padding: 40px;
+        height: 230px;
     
     }
     
