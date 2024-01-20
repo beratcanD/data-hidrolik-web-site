@@ -863,6 +863,129 @@ gap: 30px;
     align-items: center;
 }
 
+
+
+/*************************************************** VİZYON & MİSYON ******************************************************/
+
+
+.vision__mission .container {
+    margin-top: 64px;
+    padding-left: 150px;
+    padding-right: 150px;
+}
+
+.vision{
+    display: flex;
+    align-items: center;
+    gap: 70px;
+}
+
+.vision__img{
+    max-width: 370px;
+    width: 100%;
+}
+
+.vision__img img{
+    width: 100%;
+}
+
+.vision__head-desc{
+    max-width: 360px;
+}
+
+.vision__head{
+    font-size: 64px;
+    font-weight: 700;
+    color: var(--primary-blue);
+}
+.vision__desc{
+    font-size: 14px;
+    font-weight: 400;
+    color: black;
+    line-height: 20px;
+    margin-top: 24px;
+}
+
+
+.mission{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 70px;
+}
+
+.mission__img{
+    max-width: 370px;
+    width: 100%;
+}
+
+.mission__img img{
+    width: 100%;
+}
+
+.mission__head-desc{
+    max-width: 360px;
+}
+
+.mission__head{
+    font-size: 64px;
+    font-weight: 700;
+    color: var(--primary-blue);
+}
+.mission__desc{
+    font-size: 14px;
+    font-weight: 400;
+    color: black;
+    line-height: 20px;
+    margin-top: 24px;
+}
+.vision__mission-banner{
+    position: relative;
+}
+
+.vision__mission-banner .container{
+    width: 100%;
+    position: relative;
+    margin: 0;
+    
+}
+
+.vision__mission-banner .container img{
+    width: 100%;
+}
+
+.banner__head__desc{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    inset: 0;
+    margin: auto;
+}
+
+.banner__head__desc p:first-child{
+    color: white;
+    font-size: 64px;
+    font-weight: 700;
+}
+
+.banner__head__desc p:nth-child(2){
+    color: white;
+    font-size: 36px;
+    font-weight: 600;
+}
+.play__button{
+    margin-top: 20px;
+ background-color: transparent;
+    border: 0;
+    cursor: pointer;
+
+}
+
+
+
 /* Small Screen*/
 @media screen and (max-width: 320px) {
     .navbar-bottom.active{
@@ -1004,32 +1127,66 @@ gap: 30px;
     
     }
 
+    .vision__mission .container{
+        margin: 0;
+        padding-top: 40px;
+    }
 
+    .vision{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .vision__head{
+        font-size: 36px;
+    }
+    .vision__desc{
+        font-size: 12px;
+    }
+    .vision__img{
+        min-width: 150px
+    }
 
+    .mission{
+        margin-top: 40px;
+        flex-direction: column-reverse;
+        gap:20px;
+    }
+    .mission__head{
+        font-size: 36px;
+    }
+    .mission__desc{
+        font-size: 12px;
+    }
+    .mission__img{
+        min-width: 150px;
+    }
 
+    .banner__head__desc p:first-child{
+        color: white;
+        font-size: 16px;
+        font-weight: 700;
+    }
+    
+    .banner__head__desc p:nth-child(2){
+        color: white;
+        font-size: 12px;
+        font-weight: 600;
+    }
 
+    .vision__mission-banner{
+        margin-top: 100px;
+    }
 
+    .play__button{
+        margin-top: 10px;
+    
+    }
+    
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    .play__button img{
+        width: 25px;
+        height: 25px;
+    }
 
 
     .open__menu-products.active .about-us__menu-list{
@@ -1592,6 +1749,67 @@ gap: 30px;
         justify-content: center;
         
     }
+
+    .vision__mission .container{
+        margin: 0;
+        padding-top: 40px;
+    }
+
+    .vision{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .vision__head{
+        font-size: 44px;
+    }
+    .vision__desc{
+        font-size: 16px;
+    }
+    .vision__img{
+        min-width: 150px
+    }
+
+    .mission{
+        margin-top: 40px;
+        flex-direction: column-reverse;
+        gap:20px;
+    }
+    .mission__head{
+        font-size: 44px;
+    }
+    .mission__desc{
+        font-size: 16px;
+    }
+    .mission__img{
+        min-width: 150px;
+    }
+
+    .banner__head__desc p:first-child{
+        color: white;
+        font-size: 24px;
+        font-weight: 700;
+    }
+    
+    .banner__head__desc p:nth-child(2){
+        color: white;
+        font-size: 16px;
+        font-weight: 600;
+    }
+
+    .vision__mission-banner{
+        margin-top: 100px;
+    }
+
+    .play__button{
+        margin-top: 10px;
+    
+    }
+    
+
+    .play__button img{
+        width: 32px;
+        height: 32px;
+    }
     
     
 }
@@ -1911,6 +2129,71 @@ gap: 30px;
         justify-content: center;
         
     }
+
+    .vision__mission .container{
+        margin: 0;
+        padding-top: 40px;
+        display: flex;
+        flex-direction: column;
+        gap: 60px;
+    }
+
+    .vision{
+        flex-direction: row;
+        gap: 40px;
+    }
+    .vision__head{
+        font-size: 44px;
+    }
+    .vision__desc{
+        font-size: 14px;
+    }
+    .vision__img{
+        min-width: 150px
+    }
+
+    .mission{
+        margin-top: 40px;
+        flex-direction: row;
+        gap:20px;
+    }
+    .mission__head{
+        font-size: 44px;
+    }
+    .mission__desc{
+        font-size: 14px;
+    }
+    .mission__img{
+        min-width: 150px;
+    }
+
+    .banner__head__desc p:first-child{
+        color: white;
+        font-size: 36px;
+        font-weight: 700;
+    }
+    
+    .banner__head__desc p:nth-child(2){
+        color: white;
+        font-size: 20px;
+        font-weight: 600;
+    }
+
+    .vision__mission-banner{
+        margin-top: 100px;
+    }
+
+    .play__button{
+        margin-top: 20px;
+    
+    }
+    
+
+    .play__button img{
+        width: 50px;
+        height: 50px;
+    }
+
 }
 
 
@@ -2245,6 +2528,33 @@ gap: 30px;
     justify-content: center;
     
 }
+
+.banner__head__desc p:first-child{
+    color: white;
+    font-size: 54px;
+    font-weight: 700;
+}
+
+.banner__head__desc p:nth-child(2){
+    color: white;
+    font-size: 32px;
+    font-weight: 600;
+}
+
+.vision__mission-banner{
+    margin-top: 100px;
+}
+
+.play__button{
+    margin-top: 30px;
+
+}
+
+
+.play__button img{
+    width: 100px;
+    height: 100px;
+}
 }
 
 
@@ -2398,6 +2708,33 @@ gap: 30px;
     
 }
 
+.banner__head__desc p:first-child{
+    color: white;
+    font-size: 64px;
+    font-weight: 700;
+}
+
+.banner__head__desc p:nth-child(2){
+    color: white;
+    font-size: 36px;
+    font-weight: 600;
+}
+
+.vision__mission-banner{
+    margin-top: 100px;
+}
+
+.play__button{
+    margin-top: 30px;
+
+}
+
+
+.play__button img{
+    width: 118px;
+    height: 118px;
+}
+
 }
 
 /* XXXXL Screen*/
@@ -2545,6 +2882,33 @@ gap: 30px;
         align-items: center;
         justify-content: center;
         
+    }
+
+    .banner__head__desc p:first-child{
+        color: white;
+        font-size: 64px;
+        font-weight: 700;
+    }
+    
+    .banner__head__desc p:nth-child(2){
+        color: white;
+        font-size: 36px;
+        font-weight: 600;
+    }
+
+    .vision__mission-banner{
+        margin-top: 100px;
+    }
+
+    .play__button{
+        margin-top: 100px;
+    
+    }
+    
+
+    .play__button img{
+        width: 118px;
+        height: 118px;
     }
     
 }
